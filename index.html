@@ -26,10 +26,18 @@
                 $(this).toggleClass('on');
             });
 
-            $('menu_open').click(function(){
+            $('.menu_open').click(function(){
                 $('nav').css({
-                    'left':'0';
-                    'transition':'1s';
+                    'left':'0',
+                    'transition':'1s'
+                })
+            });
+
+            
+            $('.menu_close').click(function(){
+                $('nav').css({
+                    'left':'-100%',
+                    'transition':'1s'
                 })
             });
         }); /* .jquery end */
@@ -42,7 +50,7 @@
                 <a href="#">logo</a>
             </h1>
             <div class="menu_open">
-                <img src="img/" alt="">
+                <p>메뉴보기</p>
             </div> <!-- .menu_open end -->
             <nav>
                 <div class="menu_close">
